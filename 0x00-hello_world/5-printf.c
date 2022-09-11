@@ -1,13 +1,11 @@
 #include <stdio.h>
-
 /**
-* main - prints out a spring via printf
-* Discription: Program that prints out the string s followed by a new line 
-* Return: int 0 when done and no errors
+*main-Entry point
+*
+*Return: Always 0 (Success)
 */
-
 int main(void)
 {
-	printf("with proper gramma, but the outcome is a piece of art,\n");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
