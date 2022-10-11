@@ -1,26 +1,17 @@
-#ifndef _DOG_H_
-#define _DOG_H_
-
-
-/**
-* dog_t - Typedef for struct dog
-*/
-
-typedef struct dog dog_t;
+#ifndef _DOG_H
+#define _DOG_H
 
 
 
 /**
-* struct dog - struct that stores some information of a dog
-* @name: name of the dog
-* @age: age of the dog
-* @owner: owner of the dog
+* struct dog - a new type
 *
-* Description: struct called "dog" that stores its name, its age
-* and the name of its owner.
+* @name: the name of the dog (Django)
+* @age: the age of the dog (3.5)
+* @owner: the name of the owner (Jay)
 */
 
-struct dog
+typedef struct dog
 
 {
 
@@ -29,9 +20,18 @@ char *name;
 float age;
 
 char *owner;
-};
+
+}
+
+dog;
+
+/*task three, new type dog_t as new name of strcut dog */
+
+typedef struct dog dog_t;
 
 
+
+int _putchar(char c);
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
@@ -43,4 +43,4 @@ void free_dog(dog_t *d);
 
 
 
-#endif
+#endif /* DOG */
